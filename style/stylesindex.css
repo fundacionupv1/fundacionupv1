@@ -1,0 +1,238 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 900;
+}
+p, a, li, span, button {
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 2px solid #eee;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 18px 0;
+}
+
+.logo {
+  width: 380px;
+  height: auto;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+.main-nav .nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #0b1020;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: 0.25s;
+}
+.main-nav a:hover {
+  color: #005aff;
+}
+
+.hero-carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 14px;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-height: calc(100vh - 120px);
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 14px;
+  border: none;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 30;
+}
+.carousel-btn.prev { left: 14px; }
+.carousel-btn.next { right: 14px; }
+.fade { animation: fadeEffect 700ms ease-in; }
+@keyframes fadeEffect { from { opacity: .3 } to { opacity: 1 } }
+
+.about {
+  background: #f7f8fb;
+  padding: 42px 0;
+  text-align: center;
+}
+.about h2 {
+  color: #0b1020;
+  margin-bottom: 12px;
+  font-size: 32px;
+}
+.about p {
+  max-width: 920px;
+  margin: 0 auto;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-item span {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  color: #e6007e;
+}
+.stat-label {
+  color: #374151;
+  font-weight: 600;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.planes {
+  padding: 36px 0 60px 0;
+}
+.planes h2 {
+  color: #e6007e;
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 28px;
+}
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.plan {
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(11,16,32,0.04);
+}
+
+.plan:nth-child(1) { background: #e8f2ff; }  
+.plan:nth-child(2) { background: #ffe7f3; }  
+.plan:nth-child(3) { background: #e8f2ff; }  
+.plan:nth-child(4) { background: #ffe7f3; }  
+
+.plan img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.plan h3 {
+  margin-top: 12px;
+  color: #0b1020;
+}
+
+
+.about p,
+.plan p {
+  text-align: left;
+}
+
+.site-footer {
+  background: #5d6170;
+  color: #fff;
+  padding: 28px 0;
+  margin-top: 40px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.footer-content p {
+  font-size: 14px;
+}
+.social {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.social-icon:hover {
+  opacity: .8;
+}
+
+
+@media (max-width: 992px) {
+  .carousel-container { height: 480px; }
+  .plans-grid { grid-template-columns: 1fr 1fr; }
+  .logo { width: 280px; }
+}
+@media (max-width: 768px) {
+  .carousel-container { height: 350px; }
+  .plans-grid { grid-template-columns: 1fr; }
+  .logo { width: 240px; }
+  .footer-content { flex-direction: column; text-align: center; }
+}

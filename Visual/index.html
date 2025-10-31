@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unidos por la Vida</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/stylesindex.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <img src="../img/Logo.png" alt="Logo Fundación Unidos por la Vida" class="logo">
+
+      <nav class="main-nav" aria-label="Menú principal">
+        <ul class="nav-links">
+          <li><a href="../Visual/eventos.html">EVENTOS</a></li>
+          <li><a href="../Visual/blog.html">BLOG</a></li>
+          <li><a href="../Visual/ayuda.html">CÓMO AYUDAR</a></li>
+          <li><a href="../Visual/contacto.html">CONTACTANOS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-carousel" aria-label="Carrusel de imágenes">
+    <div class="carousel-container">
+      <div class="carousel-slide fade">
+        <img src="../img/car1.jpeg" alt="Manos unidas" class="carousel-img">
+      </div>
+      <div class="carousel-slide fade">
+        <img src="../img/car2.jpeg" alt="Actividad fundación" class="carousel-img">
+      </div>
+      <div class="carousel-slide fade">
+        <img src="../img/car3.png" alt="Niños felices" class="carousel-img">
+      </div>
+
+      <button class="carousel-btn prev" aria-label="Slide anterior" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-btn next" aria-label="Siguiente slide" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="about container">
+    <h2>Acerca de la Fundación</h2>
+    <p>
+      En el año 2007, se creó la Fundación Unidos Por La Vida, con personería jurídica 5500000000001178-12 de la cámara de comercio de Envigado.
+       Antioquia y NIT 900.236.511, esta fundación es sin ánimo de lucro y tiene como objeto social brindar ayuda integral a un grupo de 70 niños residentes en el departamento de Antioquia
+    </p>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number" data-target="170">170</span>
+        <div class="stat-label">Niños inscritos</div>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number" data-target="170">170</span>
+        <div class="stat-label">Mercados Mensuales</div>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number" data-target="153">153</span>
+        <div class="stat-label">Sueños Cumplidos</div>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number" data-target="14">14</span>
+        <div class="stat-label">Años de Servicio</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="planes container">
+    <h2>Nuestros Planes</h2>
+
+    <div class="plans-grid">
+      <article class="plan">
+        <img src="../img/Salud.jpeg" alt="Plan salud">
+        <h3>Salud</h3>
+        <p>La fundación promueve el bienestar de niños, niñas y familias a través del apoyo nutricional y la rehabilitación física.
+           Ofrece alimentos equilibrados y terapias como fisioterapia y fonoaudiología, fortaleciendo la movilidad y la calidad de vida de los beneficiarios </p>
+      </article>
+
+      <article class="plan">
+        <img src="../img/Educacion.jpeg" alt="Plan educación">
+        <h3>Educación</h3>
+        <p>Aun en el siglo XXL, las personas con discapacidad enfrentan grandes barreras para acceder a una educación inclusiva, equitativa y de calidad,
+           lo que genera altos índices de analfabetismo, deserción escolar y limita significativamente sus oportunidades de desarrollo personal, social y profesional.</p>
+      </article>
+
+      <article class="plan">
+        <img src="../img/Recreacion.jpeg" alt="Plan recreación">
+        <h3>Recreación</h3>
+        <p>Las actividades recreativas y deportivas generan beneficios significativos en las personas con discapacidad, fortaleciendo sus capacidades físicas, intelectuales y emocionales.
+           Mejoran las funciones respiratorias, cardiovasculares y renales, además de promover la autoestima y el bienestar integral. </p>
+      </article>
+
+      <article class="plan">
+        <img src="../img/Sueños.jpeg" alt="Realización de sueños">
+        <h3>Realización de Sueños</h3>
+        <p>En la fundación Unidos por la Vida creemos en avivar la chispa de la vida y demostrar que los sueños pueden cumplirse,
+           gestionando recursos y uniendo fuerzas para apoyar los proyectos y experiencias significativas de nuestros beneficiarios. </p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Fundación Unidos por la Vida</p>
+
+      <div class="social">
+        <a href="https://wa.me/qr/6WJCQNNLVQ73I1" class="social-icon"><img src="../img/wp.png" alt="">319 261 64 45</a>
+        <a href="https://vm.tiktok.com/ZSHceGsxL3Kya-A5wh7/" class="social-icon"><img src="../img/Lt.png" alt=""> TikTok</a>
+        <a href="https://www.instagram.com/_fundacionupv?igsh=N2V1N2NxM2s2dnUy" class="social-icon"><img src="../img/ig.png" alt=""> Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../Js/script.js"></script>
+  <script src="../Js/counter.js"></script>
+</body>
+</html>
